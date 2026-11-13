@@ -1,0 +1,603 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVEL:BLOG</title>
+    <link rel="stylesheet" href="travel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="home">
+      <section class="navcont">
+        <div class="logo">
+          <h1><span style="color: orchid">T</span>RAVEL</h1>
+        </div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+          <a href="search"><i class="fas fa-search" id="search-btn"></i></a>
+          <a href="account"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="content">
+          <h1>ADVENTURE IS WORTHWHILE</h1>
+          <p>Discover New Places With Us, Adventures Awaits</p>
+          <a href="#book" class="btn">Discover More</a>
+        </div>
+
+      
+        <div class="controls">
+          <button class="dot active slide1" aria-label="Slide 1"></button>
+          <button class="dot slide2" aria-label="Slide 2"></button>
+          <button class="dot slide3" aria-label="Slide 3"></button>
+          <button class="dot slide4" aria-label="Slide 4"></button>
+          <button class="dot slide5" aria-label="Slide 5"></button>
+        </div>
+      </section>
+
+      <!-- Book Now Section -->
+      <section class="booknow" id="book">
+        <h2 class="heading">
+          <span>B</span>
+          <span>O</span>
+          <span>O</span>
+          <span>K</span>
+          <span>N</span>
+          <span>O</span>
+          <span>W</span>
+        </h2>
+
+        <div class="booking">
+          <div class="booking-image">
+            <img
+              src="https://tourtravelbooking.netlify.app/images/book-img.svg"
+              alt="Travel image"
+            />
+          </div>
+
+          <form action="submit" class="booking-form">
+            <div class="bookinputs">
+              <label for="whereto">Where To</label>
+              <input
+                type="text"
+                id="whereto"
+                placeholder="place name"
+                required
+              />
+            </div>
+
+            <div class="bookinputs">
+              <label for="guests">How Many</label>
+              <input
+                type="number"
+                id="guests"
+                min="1"
+                placeholder="number of guests"
+                required
+              />
+            </div>
+
+            <div class="bookinputs">
+              <label for="arrivals">Arrivals</label>
+              <input type="date" id="arrivals" />
+            </div>
+
+            <div class="bookinputs">
+              <label for="leaving">Leaving</label>
+              <input type="date" id="leaving" required />
+            </div>
+
+            <button type="submit" class="btn">Book Now</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Packages Section -->
+      <section class="packages" id="packages">
+        <h2 class="heading">
+          <span>P</span>
+          <span>A</span>
+          <span>C</span>
+          <span>K</span>
+          <span>A</span>
+          <span>G</span>
+          <span>E</span>
+          <span>S</span>
+        </h2>
+
+        <div class="country">
+          <!-- Mumbai -->
+          <div class="box">
+            <img src="images/mumbai.jpg" alt="Mumbai city" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Hawaii -->
+          <div class="box">
+            <img src="images/HAwaii (2).jpg" alt="Hawaii city" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Hawaii</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Sydney -->
+          <div class="box">
+            <img src="images/syndey.jpg" alt="Sydney city" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Sydney</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Paris -->
+          <div class="box">
+            <img src="images/Paris.jpg" alt="Paris and the Eiffel Tower" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Paris</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Tokyo -->
+          <div class="box">
+            <img src="images/Tokyo.jpg" alt="Tokyo city" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Tokyo</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Egypt -->
+          <div class="box">
+            <img src="images/Egypt.jpg" alt="Ancient Egyptian pyramids" />
+
+            <div class="city-content">
+              <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+
+              <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Veritatis, Nam!
+              </p>
+
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">$90.00 <span>$120.00</span></div>
+
+              <a href="#book" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sevices section-->
+      <section class="services" id="services">
+        <h2 class="heading">
+          <span>S</span>
+          <span>E</span>
+          <span>R</span>
+          <span>V</span>
+          <span>I</span>
+          <span>C</span>
+          <span>E</span>
+          <span>S</span>
+        </h2>
+
+        <div class="services-container">
+          <div class="service-box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food And Drinks</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Around The World</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-plane"></i>
+            <h3>Fastest Travel</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
+              Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima
+              Itaque Iusto Ipsum Corrupti!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2 class="heading">
+          <span>G</span>
+          <span>A</span>
+          <span>L</span>
+          <span>L</span>
+          <span>E</span>
+          <span>R</span>
+          <span>Y</span>
+        </h2>
+
+         <div class="gallery-container">
+        <div class="gallery-box">
+          <img
+            src="images/long gown.jpg"
+            alt="Lady_on_a_mountain"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/shipshore.jpg"
+            alt="Boat"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/uncompleted.jpg"
+            alt="Historic architecture in Rome"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/ladyroad.jpg"
+            alt="Mountain"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/whitehouse.jpg"
+            alt="Whitehouse"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/sunset.jpg"
+            alt="Traveler enjoying a scenic landscape"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/hotbaloon.jpg"
+            alt="Hot air balloon travel adventure"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/tentmountain.jpg"
+            alt="Camping beside a beautiful lake"
+          />
+        </div>
+
+        <div class="gallery-box">
+          <img
+            src="images/pyramid.jpg"
+            alt="egyptain Pyramid"
+          />
+        </div>
+      </div>
+      </section>
+
+      <section class="review" id="review">
+        <h2 class="heading">
+          <span>R</span>
+          <span>E</span>
+          <span>V</span>
+          <span>I</span>
+          <span>E</span>
+          <span>W</span>
+        </h2>
+
+        <div class="review-container">
+        <div class="review-card">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="John Deo"
+          />
+          <h3>John Doe</h3>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa
+            Adipisci Quisquam Suscipit Fugiat Odit Minus Illum Asperiores
+            Dolorum Sint Quidem Quod Ipsam Distinctio Molestias Consectetur
+            Omnis Beatae, Reprehenderit Exercitationem!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="John Deo"
+          />
+          <h3>Queen Doe</h3>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa
+            Adipisci Quisquam Suscipit Fugiat Odit Minus Illum Asperiores
+            Dolorum Sint Quidem Quod Ipsam Distinctio Molestias Consectetur
+            Omnis Beatae, Reprehenderit Exercitationem!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img
+            src="https://randomuser.me/api/portraits/men/45.jpg"
+            alt="John Deo"
+          />
+          <h3>John Deo</h3>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa
+            Adipisci Quisquam Suscipit Fugiat Odit Minus Illum Asperiores
+            Dolorum Sint Quidem Quod Ipsam Distinctio Molestias Consectetur
+            Omnis Beatae, Reprehenderit Exercitationem!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!--CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+          <span>R</span>
+          <span>E</span>
+          <span>V</span>
+          <span>I</span>
+          <span>E</span>
+          <span>W</span>
+        </h2>
+         <div class="contact-container">
+        <div class="contact-image">
+          <img
+            src="images/globe.jpg"
+            alt="Airplane travelling around the world"
+          />
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="name" required />
+
+            <input type="email" name="email" placeholder="email" required />
+          </div>
+
+          <div class="input-box">
+            <input type="tel" name="number" placeholder="number" />
+
+            <input type="text" name="subject" placeholder="subject" />
+          </div>
+
+          <textarea name="message" placeholder="message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    </main>
+<!--Footer section-->
+    <footer>
+      <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>About Us</h3>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Assumenda
+            Quas Magni Pariatur Est Accusantium Voluptas Enim Nemo Facilis Sit
+            Debitis.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h3>Branch Locations</h3>
+          <a href="#">Nigeria</a>
+          <a href="#">USA</a>
+          <a href="#">Germany</a>
+          <a href="#">Australia</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Follow Me</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+
+      <div class="footer-credit">
+        Created By <span>Engr Ikwueze Edwin</span> | All Rights Reserved!
+      </div>
+    </footer>
+    
+  </body>
+</html>
